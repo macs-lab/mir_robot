@@ -254,6 +254,16 @@ If the robot's localization is lost:
 roslaunch mir_driver mir.launch
 ```
 
+### Test
+
+Publish /cmd_vel from terminal. For example,
+
+```bash
+rostopic pub -r 100 /cmd_vel 
+```
+Pressing Tab a couple times fills in a blank message. Then change the linear and angular velocities.\
+Note the message type of /cmd_vel is geometry_msgs/TwistStamped.
+
 Troubleshooting
 ---------------
 
